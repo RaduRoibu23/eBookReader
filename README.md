@@ -1,14 +1,16 @@
 #  OpenBook E-Reader
-
-**Autor:** Roibu Radu
-
 ---
 
-##  Prezentare Generala
+## Prezentare Generala
 
-**OpenBook** este un e-reader open-source construit in jurul microcontrollerului **ESP32-C6**, proiectat pentru eficienta energetica si conectivitate moderna. Integreaza un ecran e-paper de **7.5”**, senzori de mediu, gestiune avansata a bateriei si a comunicarii.
+**OpenBook** este un e-reader open-source, proiectat in jurul microcontrollerului **ESP32-C6**, gandit pentru eficienta energetica, modularitate si conectivitate moderna. Dispozitivul utilizeaza un ecran e-paper de **7.5”**, asa cum a fost ceurt in enunt.
 
-Proiectul urmareste standardele de documentare si modularitate cerute de [proiectul TSC 2025](https://ocw.cs.pub.ro/courses/tsc/proiect2025), fiind un exemplu de integrare hardware-software in embedded systems. Am incercat sa respect toate cerintele atat cat mi s-a permis.
+Proiectul a fost realizat in conformitate cu cerintele specifice [proiectului TSC 2025](https://ocw.cs.pub.ro/courses/tsc/proiect2025), punand accent pe documentare clara, organizare modulara si integrarea eficienta a componentelor hardware si software.
+
+Am investit aproximativ **35–40 de ore de lucru** in dezvoltarea acestuia pentru a-l aduce in forma actuala, timp in care am proiectat schema electronica si PCB-ul . Din pacate, din cauza unor probleme tehnice peste care nu am reusit sa trec in timp util, **nu am reusit sa finalizez partea de modelare 3D** a carcasei si ansamblului complet.
+
+In ciuda acestui neajuns, consider ca proiectul reflecta un efort solid si o abordare completa in ceea ce priveste realizarea.
+
 
 ![Poza Bottom](https://github.com/user-attachments/assets/567f6415-72f1-43f7-a293-d9e6d18dc0e8)
 ![Poza Top](https://github.com/user-attachments/assets/7dabf822-8540-4531-a2b5-caf79dd70128)
@@ -53,13 +55,7 @@ TODO: de completat ulterior cu schema bloc a componentelor
 - **Rezolutie:** 800×480 px
 - **Consum:** <50mA activ, ~0 in standby
 - **Interfata:** SPI
-
-### 🌡 Senzor BME680
-
-- **Masuratori:** Temperatura, umiditate, presiune, calitate aer
-- **Interfata:** I2C @ 400kHz
-- **Consum:** <1mA activ, <1µA standby
-
+- 
 ###  Sistem Alimentare
 
 - **Baterie:** Li-Po 3.7V / 2500mAh
@@ -71,19 +67,19 @@ TODO: de completat ulterior cu schema bloc a componentelor
   - Deep Sleep: <50µA
 - **Autonomie:** ~250 ore (~1 saptamana)
 
-### 🔘 Navigare
+### Navigare
 
 - **Butoane:** Panasonic EVQPUJ02K
 - **Rezistenta pull-up:** 10KΩ
 
-### 🔌 USB-C
+### USB-C
 
-- **Rol:** Incarcare si transfer de date
+- **Rol:** Alimentare si transfer de date
 - **Protectie:** Diode ESD (USBLC6-2SC6Y)
 
 ---
 
-## ⚙️ Configuratie Pini ESP32-C6
+##  Configuratie Pini ESP32-C6
 
 | Pin     | Functie         | Componenta         | Descriere                        |
 |---------|------------------|---------------------|----------------------------------|
@@ -108,20 +104,4 @@ TODO: de completat ulterior cu schema bloc a componentelor
 | GPIO18  | USB_D-           | USB-C               | Linie USB negativa               |
 
 ---
-
-## Structura Proiectului
-
-```bash
-openbook/
-├── firmware/         # Cod sursa pentru ESP32 (C / C++)
-│   ├── main/
-│   ├── components/
-│   └── sdkconfig
-├── hardware/         # Scheme electronice, PCB, KiCAD
-├── docs/             # Documentatie tehnica
-└── README.md         # Acest fisier
-📌 Observatii Finale
-```
-## Detalii
-Pinii si componentele au fost alese pentru a optimiza consumul, costul si usurinta integrarii. Proiectul este potrivit pentru extensii ulterioare: adaugarea de touch, conectivitate BLE avansata, suport pentru formate multiple de fisiere e-book etc.
 
