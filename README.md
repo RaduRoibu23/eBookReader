@@ -21,7 +21,45 @@ In ciuda acestui neajuns, consider ca proiectul reflecta un efort solid si o abo
 
 ##  Diagrama de Bloc
 
-TODO: de completat ulterior cu schema bloc a componentelor
+                +---------------------------+
+                |     USB-C Connector       |
+                | (USB Data ↔ ESP32 USB)    |
+                | (ESD & Termination Prot.) |
+                +-------------+-------------+
+                              |
+                              v
+                +--------------------------+
+                |       Charging IC        |<-- USB-C Power
+                +-------------+------------+
+                              |
+                              v
+                +--------------------------+
+                |         Battery          |
+                +-------------+------------+
+                              |
+                              v
+                +--------------------------+
+                |           LDO            |
+                |       (3.3V Reg)         |
+                +-------------+------------+
+                              |
+                              v
+                      +--------------+
+                      |    ESP32-C6   |
+                      +------+--------+
+                             |
+      +----------------------+-------------------------+
+      |                      |                         |
+      v                      v                         v
++-----------+       +----------------+         +-----------------+
+|  Display  |<----->|     BME688     |<------->| Tactile Buttons |
+| (SPI 4W)  |       |   (I2C + PU)   |         |  (GPIO + RC)     |
++-----------+       +----------------+         +-----------------+
+
+Legend:
+- PU = Pull-up resistors
+- RC = Debouncing circuit
+
 
 ---
 
