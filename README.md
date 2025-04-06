@@ -10,6 +10,11 @@
 
 Proiectul urmareste standardele de documentare si modularitate cerute de [proiectul TSC 2025](https://ocw.cs.pub.ro/courses/tsc/proiect2025), fiind un exemplu de integrare hardware-software in embedded systems. Am incercat sa respect toate cerintele atat cat mi s-a permis.
 
+![Poza Bottom](https://github.com/user-attachments/assets/567f6415-72f1-43f7-a293-d9e6d18dc0e8)
+![Poza Top](https://github.com/user-attachments/assets/7dabf822-8540-4531-a2b5-caf79dd70128)
+![Routing ](https://github.com/user-attachments/assets/619b44ae-11c9-4613-958d-04b963e42e6a)
+
+
 ---
 
 ##  Diagrama de Bloc
