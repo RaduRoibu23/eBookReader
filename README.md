@@ -20,6 +20,7 @@ In ciuda acestui neajuns, consider ca proiectul reflecta un efort solid si o abo
 ---
 
 ##  Diagrama de Bloc
+```
 
                 +---------------------------+
                 |     USB-C Connector       |
@@ -55,7 +56,7 @@ In ciuda acestui neajuns, consider ca proiectul reflecta un efort solid si o abo
 |  Display  |<----->|     BME688     |<------->| Tactile Buttons |
 | (SPI 4W)  |       |   (I2C + PU)   |         |  (GPIO + RC)     |
 +-----------+       +----------------+         +-----------------+
-
+```
 Legend:
 - PU = Pull-up resistors
 - RC = Debouncing circuit
