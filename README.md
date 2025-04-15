@@ -64,16 +64,6 @@ Legend:
 
 ---
 
-##  Lista de Componente (BOM)
-
-| Componenta             | Cod Produs         | Descriere                        | Furnizor | Datasheet |
-|------------------------|--------------------|----------------------------------|----------|-----------|
-| **ESP32-C6-WROOM-1-N8** | U2                 | MCU Wi-Fi 6 + Bluetooth 5        | [Mouser](https://eu.mouser.com/ProductDetail/Espressif-Systems/ESP32-C6-WROOM-1-N8) | [Link](https://www.espressif.com/sites/default/files/documentation/esp32-c6-wroom-1_datasheet_en.pdf) |
-| **W25Q512JVEIQ**        | U1                 | Flash SPI, 512Mb                 | [Mouser](https://eu.mouser.com/ProductDetail/Winbond/W25Q512JVEIQ) | [Link](https://www.winbond.com/resource-files/W25Q512JV%20RevD%2004082020.pdf) |
-| **BME680**              | S                  | Senzor de mediu (T/H/P + GAZ)    | [Mouser](https://eu.mouser.com/ProductDetail/Bosch-Sensortec/BME680) | [Link](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme680-ds001.pdf) |
-
----
-
 ##  Arhitectura Hardware
 
 ###  ESP32-C6-WROOM-1-N8
